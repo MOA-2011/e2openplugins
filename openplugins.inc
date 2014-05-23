@@ -1,6 +1,6 @@
 DEPENDS += "enigma2"
 
-SRC_URI = "git://github.com/MOA-2011/e2openplugin-${MODULE}.git;protocol=git"
+SRC_URI = "git://github.com/E2OpenPlugins/e2openplugin-${MODULE}.git;protocol=git"
 
 S="${WORKDIR}/git"
 
