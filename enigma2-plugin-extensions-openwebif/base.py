@@ -166,6 +166,18 @@ class BaseController(resource.Resource):
 			ret["remote"] = "ini-3000"
 		elif ret["box"] == "ini-7000" or ret["box"] == "ini-5000":
 			ret["remote"] = "ini-7000"
+		elif ret["box"] == "force1plus":
+			if fileExists("/etc/.brandtype"):
+			    b = open("/etc/.brandtype",'r')
+				b_brand = b.readline().strip().lower()
+				if b_brand.startswith("te"):
+					ret["box"] = "tmnano3tcombo"
+					ret["remote"] = "tmnano3tcombo"
+				else:
+					ret["remote"] = ret["box"]
+				b.close()
+			else:
+				ret["remote"] = ret["box"]
 		else:
 			ret["remote"] = ret["box"]
 		

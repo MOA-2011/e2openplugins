@@ -85,7 +85,19 @@ def getInfo():
 			model = "Optimuss OS2+"
 			brand = "Edision"
 		elif model == "force1plus":
-			model = "force1+"
+			if fileExists("/etc/.brandtype"):
+			    b = open("/etc/.brandtype",'r')
+				b_brand = b.readline().strip().lower()
+				if b_brand.startswith("te"):
+					model = "TM-NANO-3T COMBO"
+					brand = "Technomate"
+				else:
+					model = "Force1plus"
+					brand = "4D"
+				b.close()
+			else:
+				model = "force1+"
+				brand = "4D"
 		elif model in ("tmnanooe", "tmnano2t", "tmsingle", "tmtwinoe", "tm2toe", "tmnano2super", "tmnano3tcombo", "tmnanose", "tmnanosecombo", "tmnanoeco" ):
 			brand = "Technomate"
 		else:
