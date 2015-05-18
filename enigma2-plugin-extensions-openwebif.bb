@@ -77,7 +77,7 @@ do_install() {
 		cp -rp ${WORKDIR}/${MACHINE}.png ${D}${PLUGINPATH}/public/images/remotes/
 		cp -rf ${WORKDIR}/${MACHINE}.html ${D}${PLUGINPATH}/public/static/remotes/
 	elif [ "${MACHINE}" = "force1plus" ]; then
-		cp -rp ${WORKDIR}/${MACHINE}.jpg ${D}${PLUGINPATH}/public/images/boxes/force1+.jpg
+		cp -rp ${WORKDIR}/${MACHINE}.jpg ${D}${PLUGINPATH}/public/images/boxes/
 		cp -rp ${WORKDIR}/${MACHINE}.png ${D}${PLUGINPATH}/public/images/remotes/
 		cp -rf ${WORKDIR}/${MACHINE}.html ${D}${PLUGINPATH}/public/static/remotes/
 	else
