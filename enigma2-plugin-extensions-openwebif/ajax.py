@@ -75,7 +75,6 @@ class AjaxController(BaseController):
 	def P_boxinfo(self, request):
 		info = getInfo()
 		model = info["model"]
-		print "@@@@@@@@ [model] @@@@@@@@@", model
 		if model == "et9000" or model == "et9200":
 			model = "et9x00"
 		elif model == "et5000" or model == "et6000":
@@ -94,9 +93,8 @@ class AjaxController(BaseController):
 			model = "et4x00"
 		elif model == "xp1000" :
 			model = "xp1000"
-		elif model == "TM-NANO-3T COMBO":
+		elif model == "tmnano3tcombo":
 			model = "force1plus"
-		print "@@@@@@@@ [[model]] @@@@@@@@@", model
 		if fileExists(getPublicPath("/images/boxes/" + model + ".jpg")):
 			info["boximage"] = model + ".jpg"
 		else:

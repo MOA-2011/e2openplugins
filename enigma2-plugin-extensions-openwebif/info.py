@@ -85,7 +85,7 @@ def getInfo():
 			model = "Optimuss OS2+"
 			brand = "Edision"
 		elif model == "force1plus":
-			model = "TM-NANO-3T COMBO"
+			model = "tmnano3tcombo"
 			brand = "Technomate"
 		elif model in ("tmnanooe", "tmnano2t", "tmsingle", "tmtwinoe", "tm2toe", "tmnano2super", "tmnano3tcombo", "tmnanose", "tmnanosecombo", "tmnanoeco" ):
 			brand = "Technomate"
