@@ -85,10 +85,6 @@ class AjaxController(BaseController):
 			model = "Optimuss OS1"
 		elif model == "optimussos2":
 			model = "Optimuss OS2"
-		elif model == "optimussos1plus":
-			model = "Optimuss OS1+"
-		elif model == "optimussos2plus":
-			model = "Optimuss OS2+"
 		elif model == "et4000" :
 			model = "et4x00"
 		elif model == "xp1000" :
