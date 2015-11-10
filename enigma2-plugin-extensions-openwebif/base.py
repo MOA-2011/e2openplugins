@@ -170,6 +170,8 @@ class BaseController(resource.Resource):
 		    ret["remote"] = "force1plus"
 		elif ret["box"] == "tmnanosem2":
 			ret["remote"] = "tmnanosem2"
+		elif ret["box"] == "tmnanoseplus":
+			ret["remote"] = "tmnanoseplus"
 		else:
 			ret["remote"] = ret["box"]
 		

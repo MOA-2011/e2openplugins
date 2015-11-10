@@ -93,6 +93,8 @@ class AjaxController(BaseController):
 			model = "force1plus"
 		elif model == "tmnanosem2":
 			model = "tmnanosem2"
+		elif model == "tmnanoseplus":
+			model = "tmnanoseplus"
 		if fileExists(getPublicPath("/images/boxes/" + model + ".jpg")):
 			info["boximage"] = model + ".jpg"
 		else:

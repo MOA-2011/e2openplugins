@@ -83,7 +83,7 @@ def getInfo():
 		elif model == "force1plus":
 			model = "tmnano3tcombo"
 			brand = "Technomate"
-		elif model in ("tmnanooe", "tmnano2t", "tmsingle", "tmtwinoe", "tm2toe", "tmnano2super", "tmnano3tcombo", "tmnanose", "tmnanosecombo", "tmnanosem2" ):
+		elif model in ("tmnanooe", "tmnano2t", "tmsingle", "tmtwinoe", "tm2toe", "tmnano2super", "tmnano3tcombo", "tmnanose", "tmnanosecombo", "tmnanosem2", "tmnanoseplus" ):
 			brand = "Technomate"
 		elif model in ("force2", "force2solid", "force2plus", "force2se" ):
 			brand = "Iqon"
